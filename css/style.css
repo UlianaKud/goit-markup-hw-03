@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ----------GENERAL---------- */
 :root {
   --title-color: #212121;
   --paragraf-color: #757575;
@@ -30,6 +30,8 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style-type: var(--marker);
@@ -40,6 +42,7 @@ img {
   font-style: normal;
   text-decoration: var(--text-decoration);
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -61,11 +64,13 @@ img {
       (var(--card-set-column))
   );
 }
-/* HEADER */
+/* ----------HEADER 1 PAGE---------- */
 header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+.header-link{
+  padding-top: 25px;
+  padding-bottom: 25px; 
 }
 .header-container {
   display: flex;
@@ -89,11 +94,11 @@ header {
   margin-right: 50px;
 }
 .logo {
-  color: var(--active-color);
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
+  color: var(--active-color);
   text-decoration: var(--text-decoration);
 }
 .logo-header {
@@ -125,7 +130,7 @@ header {
   color: var(--active-color);
 }
 
-/* HERO 1 page */
+/*---------- HERO 1 page----------  */
 .hero,
 footer {
   background-color: rgba(47, 48, 58, 1);
@@ -137,13 +142,13 @@ footer {
 .main-heading {
   margin: 0 auto 30px auto;
   max-width: 696px;
-  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  color: var(--white-color);
 }
 .main-button {
   display: flex;
@@ -168,12 +173,12 @@ footer {
   background-color: var(--active-button);
   cursor: pointer;
 }
-/* MAIN GENERAL */
+/* ----------MAIN GENERAL---------- */
 .section-header {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  margin-bottom: 50px;
 }
 .hidden-header {
   position: absolute;
@@ -187,10 +192,7 @@ footer {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* SECTION ADVANTAGES 1 PAGE */
-.blok-list {
-  /* flex-wrap: nowrap; */
-}
+/* ----------SECTION ADVANTAGES 1 PAGE---------- */
 .blok-header {
   margin-bottom: 10px;
   font-size: 14px;
@@ -198,12 +200,11 @@ footer {
   text-transform: uppercase;
 }
 .blok-paragraf {
-  color: var(--paragraf-color);
   font-size: 14px;
   line-height: calc(24 / 14);
-  /* width: 270px; */
+  color: var(--paragraf-color);
 }
-/* SECTION OUR WORK 1 PAGE */
+/* ----------SECTION OUR WORK 1 PAGE ---------- */
 .work-section {
   padding-top: 0;
 }
@@ -211,7 +212,7 @@ footer {
   --card-set-column: 3;
 }
 
-/* SECTION OUR TEAM 1 PAGE */
+/*  ----------SECTION OUR TEAM 1 PAGE ---------- */
 .item-data {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -221,22 +222,22 @@ footer {
   background-color: var(--filter-color);
 }
 .work-header {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(19 / 16);
-  margin-bottom: 10px;
+  line-height: calc(19 / 16);  
 }
 .work-paragraf {
-  color: var(--paragraf-color);
   font-size: 16px;
   line-height: calc(19 / 16);
+  color: var(--paragraf-color);
 }
-/* FOOTER */
+/* ----------FOOTER---------- */
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   margin-bottom: 20px;
@@ -270,8 +271,10 @@ footer {
   color: var(--active-color);
 }
 
-/* second page */
-/* FILTER BLOK */
+
+/* ----------SECOND PAGE---------- */
+
+/* ----------FILTER BLOK---------- */
 .filter-list {
   margin-bottom: 50px;
   display: flex;
@@ -283,8 +286,7 @@ footer {
   justify-content: center;
   align-items: center;
   min-width: 73px;
-  color: var(--title-color);
-  background-color: var(--filter-color);
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -293,8 +295,8 @@ footer {
   letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
-  height: 38px;
-  padding: 15px 22px;
+  color: var(--title-color);
+  background-color: var(--filter-color);
 }
 .active-button,
 .filter-list-button:hover,
@@ -305,24 +307,23 @@ footer {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
-/* PORTFOLIO LIST */
+/* ----------PORTFOLIO LIST---------- */
 
 .portfolio-list-header {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
 }
 .portfolio-list-data{
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
-
 }
 .portfolio-list-text {
-  color: var(--paragraf-color);
   font-size: 16px;
   line-height: calc(30 / 16);
+  color: var(--paragraf-color);
 }
 .portfolio-list-item {
   --card-set-column: 3;

@@ -48,7 +48,7 @@ img {
   padding-bottom: 94px;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -233,11 +233,13 @@ footer {
   color: var(--paragraf-color);
 }
 /* ----------FOOTER---------- */
+footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-container {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .logo-footer {
   margin-bottom: 20px;
